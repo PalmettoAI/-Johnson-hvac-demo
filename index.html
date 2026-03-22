@@ -132,6 +132,9 @@
   }
   .nav-btn:hover { background: var(--orange-lt); color: var(--navy); }
 
+  .nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+  .nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--orange); transition: all .3s; }
+
   /* ── HERO ── */
   .hero {
     background: var(--navy);
@@ -637,7 +640,10 @@
 
   @media (max-width: 960px) {
     nav { padding: 1rem 1.5rem; }
+    .nav-hamburger { display: flex; }
+    .nav-right { display: none; }
     .nav-links { display: none; }
+    .nav-links.nav-open { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--navy); padding: 1.5rem 2rem; border-top: 3px solid var(--blue); gap: 1.2rem; z-index: 99; }
     .hero { grid-template-columns: 1fr; }
     .hero-right { display: none; }
     .hero-left { padding: 4rem 1.5rem 3rem; }
@@ -681,6 +687,7 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
+  <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   <div class="nav-right">
     <a href="tel:8039963322" class="nav-phone">(803) 996-3322</a>
     <a href="#contact" class="nav-btn">Free Quote →</a>
@@ -1028,6 +1035,7 @@
     btn.style.background = '#1B4FBF';
     btn.disabled = true;
   }
+  document.querySelector('.nav-hamburger').addEventListener('click',function(){document.querySelector('.nav-links').classList.toggle('nav-open');});
 </script>
 </body>
 </html>
