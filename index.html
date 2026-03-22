@@ -4,6 +4,10 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Wilson Heating & Cooling | Lexington SC HVAC | Since 1978</title>
+<meta name="description" content="Wilson Heating &amp; Cooling — Lexington SC HVAC since 1978. 400+ five-star reviews. AC repair, heating, ductless &amp; air quality. 24/7 emergency service. (803) 996-3322."/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HVACBusiness","name":"Wilson Heating & Cooling","description":"HVAC service in Lexington, SC since 1978. AC repair, heating, ductless mini-splits, indoor air quality, and maintenance plans. 400+ five-star reviews. 24/7 emergency service.","telephone":"(803) 996-3322","address":{"@type":"PostalAddress","streetAddress":"2830 Mineral Springs Rd","addressLocality":"Lexington","addressRegion":"SC","postalCode":"29072"},"areaServed":"Lexington County, SC"}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet"/>
@@ -138,7 +142,6 @@
     overflow: hidden;
   }
 
-  /* Diagonal slash divider */
   .hero::after {
     content: '';
     position: absolute;
@@ -150,7 +153,6 @@
     z-index: 2;
   }
 
-  /* Subtle dot pattern */
   .hero-left {
     background: var(--navy-mid);
     padding: 5rem 4rem 5rem 3.5rem;
@@ -251,7 +253,6 @@
     margin: 0 .5rem;
   }
 
-  /* Hero right — service cards */
   .hero-right {
     background: var(--navy);
     padding: 5rem 3.5rem 5rem 5rem;
@@ -301,7 +302,6 @@
     to   { opacity: 1; transform: translateX(0); }
   }
 
-  /* ── STRIP ── */
   .trust-strip {
     background: var(--blue);
     padding: 1.5rem 3.5rem;
@@ -326,7 +326,6 @@
   }
   .strip-divider { width: 1px; height: 2rem; background: rgba(255,255,255,0.2); }
 
-  /* ── SERVICES ── */
   .services-section { padding: 7rem 3.5rem; background: var(--white); }
   .services-inner { max-width: 1300px; margin: 0 auto; }
 
@@ -381,7 +380,6 @@
   .svc-card:hover { border-bottom-color: var(--orange); }
   .svc-card:hover::before { transform: scaleY(1); }
   .svc-card > * { position: relative; z-index: 1; }
-  .svc-card:hover .svc-icon { filter: none; }
   .svc-card:hover .svc-name { color: var(--white); }
   .svc-card:hover .svc-desc { color: rgba(250,252,255,0.5); }
   .svc-card:hover .svc-learn { color: var(--orange); }
@@ -409,9 +407,7 @@
     color: var(--blue); text-decoration: none;
     transition: color .3s, gap .3s;
   }
-  .svc-card:hover .svc-learn:hover { gap: .7rem; }
 
-  /* ── WHY US ── */
   .whyus-section {
     background: var(--navy-mid);
     padding: 7rem 3.5rem;
@@ -478,7 +474,6 @@
   .why-card.featured .why-title { color: var(--white); font-size: 1.4rem; }
   .why-card.featured .why-desc { color: rgba(255,255,255,0.75); }
 
-  /* ── REVIEWS ── */
   .reviews-section { padding: 7rem 3.5rem; background: var(--off); }
   .reviews-inner { max-width: 1300px; margin: 0 auto; }
 
@@ -528,7 +523,6 @@
     color: var(--gray);
   }
 
-  /* ── AREAS ── */
   .areas-section { padding: 5rem 3.5rem; background: var(--navy); }
   .areas-inner { max-width: 1300px; margin: 0 auto; }
   .areas-section .section-label { color: var(--sky); }
@@ -549,7 +543,6 @@
   }
   .area-tag:hover { background: var(--orange); border-color: var(--orange); color: white; }
 
-  /* ── CONTACT ── */
   .contact-section { padding: 7rem 3.5rem; background: var(--white); }
   .contact-inner {
     max-width: 1300px; margin: 0 auto;
@@ -621,7 +614,6 @@
   }
   .cf-submit:hover { background: var(--navy); transform: translateY(-2px); }
 
-  /* ── FOOTER ── */
   footer {
     background: var(--navy);
     border-top: 3px solid var(--blue);
@@ -633,7 +625,6 @@
   .footer-copy { font-size: .75rem; color: var(--gray); letter-spacing: .06em; }
   .footer-lic { font-size: .75rem; color: rgba(122,139,168,0.5); text-align: right; }
 
-  /* ── ANIMATIONS ── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -644,7 +635,6 @@
   }
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
-  /* ── RESPONSIVE ── */
   @media (max-width: 960px) {
     nav { padding: 1rem 1.5rem; }
     .nav-links { display: none; }
